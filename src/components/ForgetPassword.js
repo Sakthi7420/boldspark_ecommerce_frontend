@@ -15,7 +15,7 @@ const ForgetPasswordPage = () => {
 
     // try {
     //   // Replace with your API endpoint for requesting a password reset
-    //   await axios.post("http://localhost:5000/api/users/forget-password", { email });
+    //   await axios.post("https://boldspark-backend.onrender.com/api/users/forget-password", { email });
     //   toast.success("Password reset link sent to your email");
     //   setEmail(''); // Clear the input field after successful request
     // } catch (err) {

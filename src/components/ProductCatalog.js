@@ -20,7 +20,7 @@ const ProductCatalog = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/products");
+        const response = await axios.get("https://boldspark-backend.onrender.com/api/products");
         setProducts(response.data);
 
         const uniqueCategories = [...new Set(response.data.map(product => product.category))];

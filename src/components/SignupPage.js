@@ -34,7 +34,7 @@ const SignupPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/users/register",
+        "https://boldspark-backend.onrender.com/api/users/register",
         formData
       );
       toast.success("User registered successfully");

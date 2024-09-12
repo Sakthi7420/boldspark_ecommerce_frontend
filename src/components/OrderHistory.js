@@ -11,7 +11,7 @@ const OrderHistory = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/orders');
+        const response = await axios.get('https://boldspark-backend.onrender.com/api/orders');
         console.log('Fetched orders:', response.data); 
         
         setOrders(response.data);
@@ -43,7 +43,7 @@ const OrderHistory = () => {
   
     try {
       await axios.patch(
-        `http://localhost:5000/api/orders/${orderId}/status`,
+        `https://boldspark-backend.onrender.com/api/orders/${orderId}/status`,
         { status: newStatus },
       );
       setOrders(orders.map(order =>

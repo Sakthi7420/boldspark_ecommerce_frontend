@@ -17,7 +17,7 @@ function ProductDetails() {
     const fetchProduct = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/products/${id}`
+          `https://boldspark-backend.onrender.com/api/products/${id}`
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");

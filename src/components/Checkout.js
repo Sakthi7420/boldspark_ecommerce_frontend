@@ -64,7 +64,7 @@ function Checkout() {
 
     try {
       // Send order data to backend API
-      await axios.post('http://localhost:5000/api/orders', orderData, {
+      await axios.post('https://boldspark-backend.onrender.com/api/orders', orderData, {
         headers: {
           'Content-Type': 'application/json'
         }

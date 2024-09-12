@@ -32,7 +32,7 @@ const AdminDashboard = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/products');
+      const response = await axios.get('https://boldspark-backend.onrender.com/api/products');
       setProducts(response.data);
     } catch (error) {
       console.error('Error fetching products:', error);
@@ -42,7 +42,7 @@ const AdminDashboard = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/orders');
+      const response = await axios.get('https://boldspark-backend.onrender.com/api/orders');
       setOrders(response.data);
     } catch (error) {
       console.error('Error fetching orders:', error);
@@ -69,7 +69,7 @@ const AdminDashboard = () => {
 
     try {
       await axios.post(
-        'http://localhost:5000/api/products',
+        'https://boldspark-backend.onrender.com/api/products',
         newProduct,
         {
           headers: {
@@ -105,7 +105,7 @@ const AdminDashboard = () => {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/products/${editingProduct._id}`,
+        `https://boldspark-backend.onrender.com/api/products/${editingProduct._id}`,
         editingProduct,
         {
           headers: {
@@ -129,7 +129,7 @@ const AdminDashboard = () => {
     }
 
     try {
-      await axios.delete(`http://localhost:5000/api/products/${id}`, {
+      await axios.delete(`https://boldspark-backend.onrender.com/api/products/${id}`, {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },
@@ -149,7 +149,7 @@ const AdminDashboard = () => {
     }
 
     try {
-      await axios.delete(`http://localhost:5000/api/orders/${id}`, {
+      await axios.delete(`https://boldspark-backend.onrender.com/api/orders/${id}`, {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },
