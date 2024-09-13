@@ -34,7 +34,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             <img
               alt="Your Company"
-              src="https://www.wallsnapy.com/img_gallery/best-swastik-png-images-1080px-hd-9613257.png"
+              src="https://i.pinimg.com/originals/f4/cf/ec/f4cfec4f3b4bbf24798b26aa4a5508f2.png"
               className="h-16 w-auto cursor-pointer"
             />
             <Link to="/" className="text-white font-bold text-lg">
