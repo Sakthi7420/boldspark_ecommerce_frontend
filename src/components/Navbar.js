@@ -35,7 +35,7 @@ const Navbar = () => {
             <img
               alt="Your Company"
               src="https://i.pinimg.com/originals/f4/cf/ec/f4cfec4f3b4bbf24798b26aa4a5508f2.png"
-              className="h-16 w-auto cursor-pointer"
+              className="h-10 w-auto cursor-pointer"
             />
             <Link to="/" className="text-white font-bold text-lg">
               BoldSpark
