@@ -14,11 +14,7 @@ const OrderHistory = () => {
         const response = await axios.get('https://boldspark-backend.onrender.com/api/orders');
         console.log('Fetched orders:', response.data); 
         
-      if(Array.isArray(response.data)){
         setOrders(response.data);
-      } else{
-        setError('Invalid data format received');
-      }
       } catch (error) {
         setError('Error fetching orders.');
         console.error('Error fetching orders:', error);
@@ -80,7 +76,8 @@ const OrderHistory = () => {
                 <ul>
                   {order.items.map((item, index) => (
                     <li key={index} className="flex items-center justify-between mb-2">
-                      <span className="flex-1">{item.productId?.name}</span>
+                      <img src={item.productId.image} alt={item.productId.name} className="w-16 h-16 object-cover mr-4"/>
+                      <span className="flex-1">{item.productId.name}</span>
                       <span>{item.quantity} x {item.price}</span>
                     </li>
                   ))}
