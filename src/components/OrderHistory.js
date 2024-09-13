@@ -76,7 +76,6 @@ const OrderHistory = () => {
                 <ul>
                   {order.items.map((item, index) => (
                     <li key={index} className="flex items-center justify-between mb-2">
-                      <img src={item.productId.image} alt={item.productId.name} className="w-16 h-16 object-cover mr-4"/>
                       <span className="flex-1">{item.productId.name}</span>
                       <span>{item.quantity} x {item.price}</span>
                     </li>
